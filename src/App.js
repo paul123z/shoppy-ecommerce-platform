@@ -33,9 +33,18 @@ const App = () => {
             </div>
           ): (
             <div className="w-0 dark:bg-secondary-dark-bg">
-              Sidebar w-0
+              Sidebar
             </div>
           )}
+          {/* if active menu = true, then md:ml-72, otherwise flex-2 */}
+
+          {/* INSTALLED 'Tailwind CSS IntelliSense' extension, WHEN HOVERING OVER CSS I CAN SEE THE STYLE OF THAT CSS */}
+          <div className={
+            `dark:bg-main-bg bg-main-bg min-h-screen w-full ${activeMenu ? ' md:ml-72'
+            : 'flex-2'}`  
+          }>
+            <div className="fixed"></div>
+          </div>
 
         </div>
       </BrowserRouter>
