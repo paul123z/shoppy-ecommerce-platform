@@ -34,6 +34,7 @@ const App = () => {
           </div>
           {activeMenu ?( 
             <div className="w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white">
+              {/* CONTROL+LEFT MOUSE CLICK, sends me to the component => Sidebar */}
               <Sidebar/>
             </div>
           ): (
