@@ -13,7 +13,7 @@ import {useStateContext} from './contexts/ContextProvider';
 import './App.css'
 // rafce TAB (ES7+)
 const App = () => {
-  const {activeMenu} = useStateContext();
+  const {activeMenu, themeSettings,setThemeSettings} = useStateContext();
   // const activeMenu = true; we replaced it with DYNAMIC VALUE ABOVE
 
   return (
@@ -30,6 +30,7 @@ const App = () => {
                 
                 style={{ background: "blue", borderRadius: '50%' }}
                 className="text-3xl text-white p-3 hover:drop-shadow-xl hover:bg-light-gray"
+                onClick={()=>{setThemeSettings(true)}}
               >
                 <FiSettings />
               </button>
@@ -58,8 +59,8 @@ const App = () => {
           
 
           <div>
-            <ThemeSettings />
-
+            { themeSettings && <ThemeSettings />}
+              {/* we only show theme settings if its TRUE */}
 
             <Routes>
               {/* Changing all at once, ALT CLICK CLICK CLICK , 'BACKSPACE {< ctrl+right, right } />' */}
