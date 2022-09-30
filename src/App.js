@@ -13,11 +13,11 @@ import {useStateContext} from './contexts/ContextProvider';
 import './App.css'
 // rafce TAB (ES7+)
 const App = () => {
-  const {activeMenu, themeSettings,setThemeSettings} = useStateContext();
+  const {activeMenu, themeSettings,setThemeSettings,currentColor,currentMode} = useStateContext();
   // const activeMenu = true; we replaced it with DYNAMIC VALUE ABOVE
 
   return (
-    <div>
+    <div className={currentMode ==='Dark' ?'dark':''}>
       <BrowserRouter>
         <div className="flex relative dark:bg-main-dark-bg">
           <div className="fixed right-4 bottom-4" style={{ zIndex: '1000' }}>
@@ -28,7 +28,7 @@ const App = () => {
               <button
                 type="button"
                 
-                style={{ background: "blue", borderRadius: '50%' }}
+                style={{ background: currentColor, borderRadius: '50%' }}
                 className="text-3xl text-white p-3 hover:drop-shadow-xl hover:bg-light-gray"
                 onClick={()=>{setThemeSettings(true)}}
               >
