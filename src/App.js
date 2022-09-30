@@ -58,6 +58,9 @@ const App = () => {
           
 
           <div>
+            <ThemeSettings />
+
+
             <Routes>
               {/* Changing all at once, ALT CLICK CLICK CLICK , 'BACKSPACE {< ctrl+right, right } />' */}
 
