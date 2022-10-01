@@ -71,13 +71,13 @@ const Ecommerce = () => {
               <span>
                 <GoPrimitiveDot />
               </span>
-              <span>Expense</span>
+              <span className="dark:text-gray-200">Expense</span>
             </p>
             <p className="flex items-center gap-2 text-green-400 hover:drop-shadow-xl">
               <span>
                 <GoPrimitiveDot />
               </span>
-              <span>Budget</span>
+              <span >Budget</span>
             </p>
           </div>
         </div>
@@ -90,12 +90,12 @@ const Ecommerce = () => {
                   23%
                 </span>
               </p>
-              <p className="text-gray-500 mt-1">Budget</p>
+              <p className="text-gray-500 dark:text-gray-200  mt-1">Budget</p>
             </div>
             <div className="mt-8">
               <p className="text-3xl font-semibold">$48,487</p>
 
-              <p className="text-gray-500 mt-1">Expense</p>
+              <p className="text-gray-500 mt-1 dark:text-gray-200">Expense</p>
             </div>
 
             <div className="mt-5">
