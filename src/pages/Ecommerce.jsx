@@ -21,7 +21,7 @@ const Ecommerce = () => {
           <div className="flex justify-between items-center">
             <div>
               <p className="font-bold text-gray-400">Earnings</p>
-              <p className="text-2xl">$63,448.78</p>
+              <p className="text-2xl">$93,487.21</p>
           </div>
           <button
             type="button"
@@ -85,7 +85,7 @@ const Ecommerce = () => {
           <div className=" border-r-1 border-color m-4 pr-10">
             <div>
               <p>
-                <span className="text-3xl font-semibold">$93,438</span>
+                <span className="text-3xl font-semibold">$62,438</span>
                 <span className="p-1.5 hover:drop-shadow-xl cursor-pointer rounded-full text-white bg-green-400 ml-3 text-xs">
                   23%
                 </span>
