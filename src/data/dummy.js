@@ -527,23 +527,23 @@ export const cartData = [
   {
     image:
       product5,
-    name: 'butterscotch ice-cream',
-    category: 'Milk product',
-    price: '$250',
+    name: 'British Onion',
+    category: 'Vegetable',
+    price: '$53',
   },
   {
     image:
       product6,
     name: 'Supreme Iphone 17 XLL',
-    category: 'Vegetable Item',
-    price: '$450',
+    category: 'Electronics',
+    price: '$847',
   },
   {
     image:
       product7,
-    name: 'Red color candy',
-    category: 'Food Item',
-    price: '$190',
+    name: 'Gucci Watch',
+    category: 'Accessories',
+    price: '$795',
   },
 ];
 
