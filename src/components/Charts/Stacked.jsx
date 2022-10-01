@@ -9,6 +9,7 @@ const Stacked = ({ width, height }) => {
 
   return (
     <ChartComponent
+      className="rounded-xl"
       id="charts"
       primaryXAxis={stackedPrimaryXAxis}
       primaryYAxis={stackedPrimaryYAxis}
@@ -16,7 +17,7 @@ const Stacked = ({ width, height }) => {
       height={height}
       chartArea={{ border: { width: 0 } }}
       tooltip={{ enable: true }}
-      background={currentMode === 'Dark' ? '#fff' : '#fff'}
+      background={currentMode === 'Dark' ? '#dedede' : '#fff'}
       legendSettings={{ background: 'white'  }}
     >
       <Inject services={[StackingColumnSeries, Category, Legend, Tooltip]} />

@@ -11,7 +11,7 @@ const Bar = () => {
   const{currentMode} = useStateContext();
 
   return (
-    <div className="m-4 md:m-10 mt-24 p-10 bg-white  rounded-3xl">
+    <div className="m-4 md:m-10 mt-24 p-10 bg-white dark:bg-[#dedede] rounded-3xl">
       <Header category="Chart"
       title="Bar"
       />
@@ -23,7 +23,8 @@ const Bar = () => {
     primaryYAxis={barPrimaryYAxis}
     chartArea={{border:{width:0}}}
     tooltip={{enable:true}}
-    background={currentMode === "Dark" ? '#FFF' : "#FFF"}
+    background={currentMode === "Dark" ? '#dedede' : "#FFF"}
+    legendSettings={{ background: '#fff' }}
     >
       <Inject services=  
       {[ColumnSeries,DataLabel,Legend,Tooltip,Category]}

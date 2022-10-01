@@ -9,7 +9,7 @@ const ColorMapping = () => {
   const { currentMode } = useStateContext();
 
   return (
-    <div className="m-4 md:m-10 mt-24 p-10 bg-white  rounded-3xl">
+    <div className="m-4 md:m-10 mt-24 p-10 bg-white dark:bg-[#dedede]  rounded-3xl">
       <Header category="Chart" title="Color-Mapping" />
       <div className="w-full">
         <ChartComponent
@@ -19,7 +19,7 @@ const ColorMapping = () => {
           chartArea={{ border: { width: 0 } }}
           legendSettings={{ mode: 'Range', background: 'white' }}
           tooltip={{ enable: true }}
-          background={currentMode === 'Dark' ? '#fff' : '#fff'}
+          background={currentMode === 'Dark' ? '#dedede' : '#fff'}
         >
           <Inject services={[ColumnSeries, Tooltip, Category, Legend]} />
           <SeriesCollectionDirective>

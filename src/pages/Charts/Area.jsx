@@ -9,21 +9,21 @@ const Area = () => {
   const { currentMode } = useStateContext();
 
   return (
-    <div className="m-4 md:m-10 mt-24 p-10 bg-white  rounded-3xl">
+    <div className="m-4 md:m-10 mt-24 p-10 bg-white dark:bg-[#dedede] rounded-3xl">
       <Header category="Chart" title="Area" />
       <div className="w-full">
-        <ChartComponent
+        <ChartComponent 
           id="charts"
           primaryXAxis={areaPrimaryXAxis}
           primaryYAxis={areaPrimaryYAxis}
           chartArea={{ border: { width: 0 } }}
-          background={currentMode === 'Dark' ? '#fff' : '#fff'}
-          legendSettings={{ background: 'white' }}
+          background={currentMode === 'Dark' ? '#dedede' : '#fff'}
+          legendSettings={{ background: '#fff' }}
         >
-          <Inject services={[SplineAreaSeries, DateTime, Legend]} />
-          <SeriesCollectionDirective>
+          <Inject services={[SplineAreaSeries, DateTime, Legend]}   />
+          <SeriesCollectionDirective >
             {/* eslint-disable-next-line react/jsx-props-no-spreading */}
-            {areaCustomSeries.map((item, index) => <SeriesDirective key={index} {...item} />)}
+            {areaCustomSeries.map((item, index) => <SeriesDirective key={index} {...item}  />)}
           </SeriesCollectionDirective>
         </ChartComponent>
       </div>
