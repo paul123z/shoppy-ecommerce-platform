@@ -7,8 +7,8 @@ import { useStateContext } from '../../contexts/ContextProvider';
 
 const Doughnut = ({ id, data, legendVisiblity, height }) => {
   const { currentMode } = useStateContext();
-
-  return (
+ 
+  return ( 
     
     <AccumulationChartComponent 
       
