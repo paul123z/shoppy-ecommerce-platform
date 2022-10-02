@@ -21,7 +21,7 @@ const Financial = () => {
 
   return (
     <div className="m-4 md:m-10 mt-24 p-10 bg-white dark:bg-[#dedede]  rounded-3xl">
-      <Header category="Chart" title="Financial" />
+      <Header category="Chart" title="Financial: Alphabet Inc. Historical" />
       <div className="w-full">
         <ChartComponent
           id="charts"

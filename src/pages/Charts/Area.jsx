@@ -10,7 +10,7 @@ const Area = () => {
 
   return (
     <div className="m-4 md:m-10 mt-24 p-10 bg-white dark:bg-[#dedede] rounded-3xl">
-      <Header category="Chart" title="Area" />
+      <Header category="Chart" title="Area: Inflation Rate in %" />
       <div className="w-full">
         <ChartComponent 
           id="charts"

@@ -13,7 +13,7 @@ const Bar = () => {
   return (
     <div className="m-4 md:m-10 mt-24 p-10 bg-white dark:bg-[#dedede] rounded-3xl">
       <Header category="Chart"
-      title="Bar"
+      title="Bar: Distribution of Olympic Medals [Beijing 2022]"
       />
       <div className=" w-full">
       <ChartComponent
