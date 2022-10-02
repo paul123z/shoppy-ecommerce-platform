@@ -22,6 +22,8 @@ const Ecommerce = () => {
   const {currentColor,currentMode} = useStateContext();
 
   return (
+
+    // EARNINGS+DOLLAR SECTION-------------------------------
     <div className="mt-24">
       <div className="flex flex-wrap lg:flex-nowrap justify-center ">
         <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg h-44 rounded-xl w-full lg:w-80 p-8 pt-9 m-3 ">
@@ -47,6 +49,8 @@ const Ecommerce = () => {
           />
         </div>
       </div>
+
+    {/* MAPPING OVER CUSTOMERS,PRODUCTS,SALES,REFUNDS ------------------------------- */}
       <div className="flex m-3 flex-wrap justify-center gap-1 items-center">
         {earningData.map((item) => (
           <div key={item.title} className="bg-white h-44 dark:text-gray-200 dark:bg-secondary-dark-bg md:w-56  p-4 pt-9 rounded-2xl ">
@@ -69,6 +73,12 @@ const Ecommerce = () => {
       </div>
     </div>
 
+
+
+
+
+
+{/* REVENUE UPDATES SECTION ----------------------------------------- */}
     <div className="flex gap-10 flex-wrap justify-center">
       <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl md:w-780  ">
         <div className="flex justify-between">
@@ -124,6 +134,8 @@ const Ecommerce = () => {
       </div>
       </div>
 
+
+          {/* EARNIGS+YEARLY SALES DIV ----------- */}
       <div className="flex justify-center flex-wrap ">
 
         {/* ADDING EARNINGS */}
@@ -219,7 +231,7 @@ const Ecommerce = () => {
               />
             </div>
 
-            <p className="text-gray-400 text-sm">36 Recent Transactions</p>
+            <p className="text-gray-400 text-sm">42 Recent Transactions</p>
           </div>
         </div>
         <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg p-6 rounded-2xl w-96 md:w-760">
