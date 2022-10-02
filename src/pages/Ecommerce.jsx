@@ -115,8 +115,47 @@ const Ecommerce = () => {
           </div>
         </div>
       </div>
-        
-          
+
+        {/* ADDING EARNINGS */}
+        <div className="rounded-2xl md:w-400 p-4 m-3"
+        style={{backgroundColor:currentColor}}
+        >
+          <div className="flex justify-between items-center">
+            <p className="font-semibold text-white text-2xl">
+              Earnings
+            </p>
+            <div>
+              <p className="text-2xl text-white font-semibold mt-8">
+              $93,487.21
+              </p>
+
+              <p className="text-gray-200">
+                Monthly Revenue
+              </p>
+            </div>
+          </div>
+          <div className="mt-4">
+              <SparkLine 
+              currentColor={currentColor}
+              id="collumn-sparkLine"
+              height="100px"
+              data={SparklineAreaData}
+              type="Column"
+              width="320"
+              color="rgb(242,252,253)"
+              />
+            </div>
+        </div>
+
+
+          {/* YEARLY SALES */}
+          <div>
+
+          </div>
+
+
+
+
 
       </div>
     </div>
