@@ -5,7 +5,7 @@ import { IoIosMore } from 'react-icons/io';
 import { DropDownListComponent } from '@syncfusion/ej2-react-dropdowns';
 
 import { Stacked, Pie, Button, LineChart, SparkLine } from '../components';
-// import {PieEcommerce} from '../components/Charts'
+import {PieEcommerce} from '../components';
 import { earningData, medicalproBranding, recentTransactions, weeklyStats, dropdownData, SparklineAreaData, ecomPieChartData } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
 import product9 from '../data/product9.jpg';
@@ -173,12 +173,12 @@ const Ecommerce = () => {
           {/* YEARLY SALES */}
           <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg rounded-2xl md:w-400 p-8 m-3 flex justify-center items-center gap-10">
             <div>
-              <p className="text-2xl font-semibold">42,315</p>
+              <p className="text-2xl font-semibold">$42,315</p>
               <p className="text-gray-400">Yearly Sales</p>
             </div>
 
             <div className="w-40 dark:bg-secondary-dark-bg rounded-3xl">
-              <Pie
+              <PieEcommerce
               id="pie-chart"
               data={ecomPieChartData}
               legendVisiblity={false}
