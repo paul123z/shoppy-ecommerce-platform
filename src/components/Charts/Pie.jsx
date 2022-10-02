@@ -11,7 +11,8 @@ const Doughnut = ({ id, data, legendVisiblity, height }) => {
   return (
     
     <AccumulationChartComponent 
-      className="rounded-xl"
+      
+      // title="Sales Distribution"
       id={id}
       legendSettings={{ visible: legendVisiblity, background: 'white' }}
       height={height}
