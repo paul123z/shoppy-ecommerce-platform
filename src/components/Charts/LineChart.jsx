@@ -10,6 +10,7 @@ const LineChart = () => {
 
   return (
     <ChartComponent
+    className="rounded-xl"
     id="line-chart"
     height="420px"
     primaryXAxis={LinePrimaryXAxis}
